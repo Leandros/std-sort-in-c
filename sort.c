@@ -248,11 +248,16 @@ void final_insertion_sort(iter begin, iter end, comparator cmpfp)
     }
 }
 
+double log2(double n)
+{
+    return log(n) / log(2.0);
+}
+
 void sort(iter begin, iter end, comparator cmpfp)
 {
     if (begin != end)
     {
-        introsort_loop(begin, end, log((double)(end - begin)) * 2, cmpfp);
+        introsort_loop(begin, end, log2((double)(end - begin)) * 2, cmpfp);
         final_insertion_sort(begin, end, cmpfp);
     }
 }
