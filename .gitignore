@@ -1,0 +1,20 @@
+# Ignore everything
+*
+
+# Respect subdirectories
+!*/
+
+# Exclude .gitignore
+!.gitignore
+
+# Exclude readme
+!README.md
+!LICENSE
+
+# Exclude source files
+!*.c
+!*.cc
+
+# exclude makefiles
+!Makefile
+
